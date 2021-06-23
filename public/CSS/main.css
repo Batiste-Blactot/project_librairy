@@ -1,0 +1,46 @@
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Viaoda Libre', cursive;
+}
+
+li{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+.text-orange{
+    color: #EB5E28;
+}
+
+.bg-floral{
+    background-color: #CCC5B9;
+}
+
+button {
+    transition: all .5s ease;
+    color: rgb(255, 255, 255);
+    border: 3px solid white;
+    font-family:'Montserrat', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    font-size: 17px;
+    background-color : transparent;
+    padding: 10px;
+    outline: none;
+    border-radius: 4px;
+}
+button:hover {
+    color: #001F3F;
+    background-color: #EB5E28;
+    border: 3px solid #EB5E28;
+}
+
