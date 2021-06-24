@@ -29,19 +29,19 @@ if (isset($_SESSION['connecter'])) {
     }
 }
 
-//si n'y a pas la variable de connecter alors connecter est false
+//S'il n'y a pas de variable 'connecter' alors la connexion n'est pas == à true
 if (!isset($_SESSION['connecter']))
     $_SESSION['connecter'] = false;
 
-//pour lad conexion je dois verfier dans la premier temps est ce que j'ai les variable 
+//Pour faire la connexion on vérifie si les variables ont bien été remplies
 if (!empty($_POST['email']) and !empty($_POST['pwd'])) {
     $client1 = new Client();
-    //la fonction valide pour chercher est-ce que ce client existe
+    //On vérifie que l'utilisateur / client existe
     if ($client = $client1->valide($_POST['email'], $_POST['pwd'])) {
 
         $_SESSION['connecter'] = true;
         foreach ($client as $client_connecter) {
-            //stocke tt les variable dans session pour travaille dans tous les page
+            //On stocke toutes les variables dans les variables SESSIONS
             $_SESSION['id_client'] = $client_connecter['id_client'];
             $_SESSION['nom_client'] = $client_connecter['nom_client'];
             $_SESSION['Email'] = $client_connecter['Email'];

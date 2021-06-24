@@ -3,7 +3,7 @@ session_start();
 
 include("model/Client.php");
 if (!isset($_SESSION['connecter']))
-    $_SESSION['connecter'] = false; //pour la premier fois 
+    $_SESSION['connecter'] = false; //Connexion 
 
 
 ?>

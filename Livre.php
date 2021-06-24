@@ -1,12 +1,9 @@
 <?php
 
-require_once('connexion.php');
+require_once('model/Connexion.php');
 
 class Livre extends Connexion
 {
-
-    private $table = "livre";
-
     public function afficher($var, $next, $nex)
     {
         $livre = array();

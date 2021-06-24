@@ -1,5 +1,5 @@
 <?php
-//definition pour les emprunt et definition pour l'utilisateur
+//Page pour les emprunts
 session_start();
 include("model/Client.php");
 ?>

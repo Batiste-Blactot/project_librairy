@@ -4,9 +4,6 @@ require_once('Connexion.php');
 
 class Livre extends Connexion
 {
-
-    private $table = "livre";
-
     public function afficher($var, $next, $nex)
     {
         $livre = array();
